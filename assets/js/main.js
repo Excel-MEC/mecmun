@@ -134,7 +134,7 @@
                     anchor = $(this),
                     href = anchor.attr('href'),
                     offset = ww > 992 ? navHeightShrink : navHeight;
-
+                console.log($(this)," dist ",href," ",$(href).offset().top - (offset - 1))
                 $('html, body').stop().animate({
                     scrollTop: $(href).offset().top - (offset - 1)
                 }, 1000, 'easeInOutExpo');
